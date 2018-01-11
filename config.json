@@ -1,0 +1,9 @@
+{
+	"http": {
+		"listen": "localhost:8000",
+		"templates_directory":"templates"
+	},
+	"freeswitch": {
+		"module_data_directory":"moduledata/"
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"fs-01": {
+		"acl.conf": [{
+			"name": "lan",
+			"action": "allow",
+			"nodes": [{
+				"action": "deny",
+				"type": "cidr",
+				"value": "192.168.42.0/24"
+			}]
+		}, {
+			"name": "proxy",
+			"action": "deny",
+			"nodes": [{
+				"action": "allow",
+				"type": "cidr",
+				"value": "10.10.10.11/32"
+			}, {
+				"action": "allow",
+				"type": "cidr",
+				"value": "10.10.10.12/32"
+			}]
+		}]
+	}
+}

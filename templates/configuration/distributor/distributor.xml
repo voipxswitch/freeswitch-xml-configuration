@@ -1,0 +1,11 @@
+<document type="freeswitch/xml">
+    <section name="configuration" description="FreeSWITCH Configuration">
+        <configuration name="distributor.conf" description="Distributor Configuration">
+            <lists>
+{{ range .Lists }}                <list name="{{.Name}}" default="{{.Weight}}">
+{{ range .Nodes }}                    <node name="{{.Name}}" weight="{{.Weight}}"/>
+{{ end }}                </list>{{ end }}
+            </lists>
+        </configuration>
+    </section>
+</document>

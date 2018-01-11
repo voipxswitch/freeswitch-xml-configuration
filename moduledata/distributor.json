@@ -1,0 +1,15 @@
+{
+	"fs-01": {
+		"distributor.conf": [{
+			"name": "proxy",
+			"total_weight": 2,
+			"nodes": [{
+				"name": "proxy-01.local",
+				"weight": 1
+			}, {
+				"name": "proxy-02.local",
+				"weight": 1
+			}]
+		}]
+	}
+}

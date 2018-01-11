@@ -1,0 +1,11 @@
+<document type="freeswitch/xml">
+    <section name="configuration" description="FreeSWITCH Configuration">
+        <configuration name="acl.conf" description="Network Lists">
+            <network-lists>
+{{ range .Lists }}                <list name="{{.Name}}" default="{{.Action}}">
+{{ range .Nodes }}                    <node type="{{.Action}}" {{.Type}}="{{.Value}}"/>
+{{ end }}                </list>
+{{ end }}            </network-lists>
+        </configuration>
+    </section>
+</document>
